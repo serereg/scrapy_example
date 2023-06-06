@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "train-scrapy"
+version = "0.1.0"
+description = ""
+authors = ["Sergei Smolov <sergei_smolov@epam.com>"]
+readme = "README.md"
+packages = [{include = "train_scrapy"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Scrapy = "^2.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
